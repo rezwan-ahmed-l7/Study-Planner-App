@@ -49,6 +49,16 @@ public class App extends Application {
         Line line = new Line(0, 0, WIN_WIDTH - 60, 0);
         line.setStroke(Color.web("#ecf0f1"));
 
+        VBox selectBox = new VBox(8);
+        Label selectLabel = new Label("Select Task:");
+        selectLabel.setStyle("-fx-font-weight: bold; -fx-text-fill: #000000;");
+
+        ChoiceBox<String> taskDropdown = new ChoiceBox<>();
+        List<String> options = getSuggestionsForDept(department);
+        taskDropdown.getItems().addAll(options);
+        taskDropdown.setValue(options.get(0));
+        taskDropdown.setMaxWidth(Double.MAX_VALUE);
+        taskDropdown.setStyle("-fx-background-color: #f8f9fa; -fx-border-color: #ddd; -fx-border-radius: 5; -fx-padding: 8;");
 
     public static void main(String[] args) {
         launch(args);
