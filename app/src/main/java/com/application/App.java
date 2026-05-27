@@ -82,6 +82,10 @@ public class App extends Application {
                 limitErrorLabel.setText("You can only add 5 tasks !");
             }
         });
+
+        root.getChildren().addAll(welcomeLabel, deptLabel, line, selectBox, taskContainer);
+        primaryStage.setScene(new Scene(root, WIN_WIDTH, WIN_HEIGHT));
+        }
         
     public static void main(String[] args) {
         launch(args);
