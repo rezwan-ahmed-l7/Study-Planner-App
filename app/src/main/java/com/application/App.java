@@ -60,6 +60,29 @@ public class App extends Application {
         taskDropdown.setMaxWidth(Double.MAX_VALUE);
         taskDropdown.setStyle("-fx-background-color: #f8f9fa; -fx-border-color: #ddd; -fx-border-radius: 5; -fx-padding: 8;");
 
+                Button addTaskBtn = new Button("+ Add Task");
+        addTaskBtn.setMaxWidth(Double.MAX_VALUE);
+        addTaskBtn.setStyle(
+                "-fx-background-color: #3498db; -fx-text-fill: white; -fx-font-weight: bold; -fx-font-size: 16px; -fx-padding: 12; -fx-background-radius: 8;");
+
+        Label limitErrorLabel = new Label();
+        limitErrorLabel.setStyle("-fx-text-fill: #e74c3c; -fx-font-size: 13px; -fx-font-weight: bold;");
+
+        selectBox.getChildren().addAll(selectLabel, taskDropdown, addTaskBtn, limitErrorLabel);
+
+        taskContainer = new VBox(15);
+        taskContainer.setPadding(new Insets(10, 0, 0, 0));
+
+        addTaskBtn.setOnAction(e -> {
+            if (taskContainer.getChildren().size() < 5) {
+                limitErrorLabel.setText("");
+                String selectedTask = taskDropdown.getValue();
+                addTaskRow(selectedTask);
+            } else {
+                limitErrorLabel.setText("You can only add 5 tasks !");
+            }
+        });
+        
     public static void main(String[] args) {
         launch(args);
     }
