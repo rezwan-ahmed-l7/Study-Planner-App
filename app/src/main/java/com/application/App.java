@@ -86,7 +86,20 @@ public class App extends Application {
         root.getChildren().addAll(welcomeLabel, deptLabel, line, selectBox, taskContainer);
         primaryStage.setScene(new Scene(root, WIN_WIDTH, WIN_HEIGHT));
         }
-        
+
+        private List<String> getSuggestionsForDept(String dept) {
+        if (dept.equals("CSE"))
+            return Arrays.asList("Practice problem solving", "Complete DSA Assignment", "Practice OOP JAVA",
+                    "Work on SDP Project", "Prepare for exams");
+        if (dept.equals("BBA"))
+            return Arrays.asList("Work on Management skills", "Practice Accounting Maths", "Improve Presentation",
+                    "Complete Statistics Assignment", "Improve Communication skills");
+        if (dept.equals("English"))
+            return Arrays.asList("Practice public speaking", "Improve grammar & vocabulary", "Creative Writing",
+                    "Watch Practicing TED Talks", "Literature Review");
+        return Arrays.asList("General Study");
+    }
+    
     public static void main(String[] args) {
         launch(args);
     }
