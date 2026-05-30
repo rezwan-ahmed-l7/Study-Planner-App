@@ -13,7 +13,7 @@
 </p>
 
 <p align="center">
-  A Department-Based Study Planner desktop application built using <b>Java</b> and <b>JavaFX</b> for my Software Development Project (SDP) course.
+  A Department-Based Study Planner Desktop Application built using <b>Java</b> and <b>JavaFX</b> for my Software Development Project (SDP) course.
 </p>
 
 ---
@@ -98,9 +98,9 @@ The project was designed to apply Object-Oriented Programming principles, event-
 
 Before running this project, make sure you have installed:
 
-* Java JDK 17 or later
+* Java JDK 25 or later
 * Maven
-* JavaFX SDK
+* JavaFX 25 SDK
 * VS Code or any Java-supported IDE
 
 ---
