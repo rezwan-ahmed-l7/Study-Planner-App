@@ -2,13 +2,13 @@
 
 <p align="center">
 
+  <img src="https://img.shields.io/badge/Software%20Development%20Project-1E40AF?style=for-the-badge" />
+
   <img src="https://img.shields.io/badge/Maven-C71A36?style=for-the-badge&logo=apache-maven&logoColor=white" />
 
-  <img src="https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=openjdk&logoColor=white" />
+  <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" />
 
   <img src="https://img.shields.io/badge/JavaFX-007ACC?style=for-the-badge&logo=java&logoColor=white" />
-
-  <img src="https://img.shields.io/badge/Software%20Development%20Project-1E40AF?style=for-the-badge" />
 
 </p>
 
