@@ -43,7 +43,6 @@ The project was designed to apply Object-Oriented Programming principles, event-
 
 ---
 
-```html
 # Application Workflow
 
 <table>
@@ -114,7 +113,6 @@ When the **Complete** button is pressed:
 </td>
 </tr>
 </table>
-```
 
 ---
 
