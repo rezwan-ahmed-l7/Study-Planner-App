@@ -107,7 +107,7 @@ When the **Complete** button is pressed:
 
 <td width="55%">
 
-<img src="https://github.com/user-attachments/assets/f7b89aec-c635-48d6-8db4-76637c7bade4" width="100%">
+<img src="https://github.com/user-attachments/assets/538d8471-984a-44e1-a7f3-aa1729c49b84" width="100%">
 
 </td>
 </tr>
