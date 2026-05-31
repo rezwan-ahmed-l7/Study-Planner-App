@@ -49,7 +49,7 @@ The project was designed to apply Object-Oriented Programming principles, event-
 <tr>
 <td width="45%">
 
-## Student Registration
+## 1. Student Registration
 
 The application begins with a registration page where students enter their:
 
@@ -57,7 +57,7 @@ The application begins with a registration page where students enter their:
 - Student ID
 - Department
 
-After successful validation, users are redirected to the study planner dashboard.
+After successful submission, users are redirected to the study planner dashboard.
 
 </td>
 
@@ -71,14 +71,13 @@ After successful validation, users are redirected to the study planner dashboard
 <tr>
 <td width="45%">
 
-## Task Management & Validation
+## 2. Task Management & Validation
 
 Students can select department-specific study tasks and add them to their planner.
 
 Features demonstrated:
 
 - Department-based task suggestions
-- Dynamic task creation
 - Maximum 5 task limit
 - Validation warning message
 
@@ -94,7 +93,7 @@ Features demonstrated:
 <tr>
 <td width="45%">
 
-## Task Completion
+## 3. Task Completion
 
 Users can mark tasks as completed.
 
@@ -113,16 +112,6 @@ When the **Complete** button is pressed:
 </td>
 </tr>
 </table>
-
----
-
-## 3. Task Completion
-
-Students can mark tasks as completed. Once completed, the task is automatically removed from the planner to keep the study schedule organized.
-
-<p align="center">
-  <img width="700" alt="Task Completion" src="https://github.com/user-attachments/assets/f7b89aec-c635-48d6-8db4-76637c7bade4" />
-</p>
 
 ---
 
