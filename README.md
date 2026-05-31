@@ -47,9 +47,11 @@ The project was designed to apply Object-Oriented Programming principles, event-
 
 <p align="center">
 
-  <!-- Add your application screenshot here -->
+  <img width="970" height="1003" alt="Screenshot 2026-05-31 034132" src="https://github.com/user-attachments/assets/3690a2f3-f14e-4c6f-bd59-5de40595d1d8" />
 
-  <img width="900" alt="Department Based Study Planner Screenshot" src="YOUR_SCREENSHOT_LINK_HERE" />
+  <img width="973" height="1011" alt="Screenshot 2026-05-31 034226" src="https://github.com/user-attachments/assets/554403ae-2acc-4d8b-a8ca-8a79576157e7" />
+
+  <img width="971" height="1010" alt="Screenshot 2026-05-31 034355" src="https://github.com/user-attachments/assets/f7b89aec-c635-48d6-8db4-76637c7bade4" />
 
 </p>
 
