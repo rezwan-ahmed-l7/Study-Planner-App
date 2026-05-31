@@ -196,19 +196,30 @@ mvn javafx:run
 ```bash
 Department-Based-Study-Planner/
 │
-├── src/
-│   └── main/
-│       ├── java/
-│       │   └── com/
-│       │       └── application/
-│       │           └── App.java
-│       │
-│       └── resources/
-│           └── StudyPlanner.png
+├── .github/
 │
-├── pom.xml
-├── LICENSE
-└── README.md
+├── app/
+│   ├── src/
+│   │   └── main/
+│   │       ├── java/
+│   │       │   ├── com/
+│   │       │   │   └── application/
+│   │       │   │       └── App.java
+│   │       │   │
+│   │       │   └── module-info.java
+│   │       │
+│   │       └── resources/
+│   │           └── com/
+│   │               └── application/
+│   │                   ├── primary.fxml
+│   │                   ├── secondary.fxml
+│   │                   └── StudyPlanner.png
+│   │
+│   └── target/
+│       ├── classes/
+│       └── test-classes/
+│
+└── pom.xml
 ```
 
 ---
