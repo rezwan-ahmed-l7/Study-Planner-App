@@ -184,7 +184,7 @@ public class App extends Application {
         taskContainer.getChildren().add(row);
     }
 
-        private List<String> getSuggestionsForDept(String dept) {
+    private List<String> getSuggestionsForDept(String dept) {
         if (dept.equals("CSE"))
             return Arrays.asList("Practice problem solving", "Complete DSA Assignment", "Practice OOP JAVA",
                     "Work on SDP Project", "Prepare for exams");
@@ -196,7 +196,7 @@ public class App extends Application {
                     "Watch Practicing TED Talks", "Literature Review");
         return Arrays.asList("General Study");
     }
-    
+
     public static void main(String[] args) {
         launch(args);
     }
