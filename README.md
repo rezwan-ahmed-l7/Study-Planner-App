@@ -43,16 +43,34 @@ The project was designed to apply Object-Oriented Programming principles, event-
 
 ---
 
-# Screenshot
+# Screenshots
+
+## 1. Student Registration
+
+The application starts with a registration page where students enter their name, ID, and department before accessing the study planner.
 
 <p align="center">
+  <img width="700" alt="Student Registration" src="https://github.com/user-attachments/assets/3690a2f3-f14e-4c6f-bd59-5de40595d1d8" />
+</p>
 
-  <img width="970" height="1003" alt="Screenshot 2026-05-31 034132" src="https://github.com/user-attachments/assets/3690a2f3-f14e-4c6f-bd59-5de40595d1d8" />
+---
 
-  <img width="973" height="1011" alt="Screenshot 2026-05-31 034226" src="https://github.com/user-attachments/assets/554403ae-2acc-4d8b-a8ca-8a79576157e7" />
+## 2. Department-Based Task Planning
 
-  <img width="971" height="1010" alt="Screenshot 2026-05-31 034355" src="https://github.com/user-attachments/assets/f7b89aec-c635-48d6-8db4-76637c7bade4" />
+After registration, students can select and add department-specific study tasks. The application also validates the maximum task limit and displays a warning when the limit is reached.
 
+<p align="center">
+  <img width="700" alt="Task Management and Validation" src="https://github.com/user-attachments/assets/554403ae-2acc-4d8b-a8ca-8a79576157e7" />
+</p>
+
+---
+
+## 3. Task Completion
+
+Students can mark tasks as completed. Once completed, the task is automatically removed from the planner to keep the study schedule organized.
+
+<p align="center">
+  <img width="700" alt="Task Completion" src="https://github.com/user-attachments/assets/f7b89aec-c635-48d6-8db4-76637c7bade4" />
 </p>
 
 ---
