@@ -43,25 +43,78 @@ The project was designed to apply Object-Oriented Programming principles, event-
 
 ---
 
-# Screenshots
+```html
+# Application Workflow
 
-## 1. Student Registration
+<table>
+<tr>
+<td width="45%">
 
-The application starts with a registration page where students enter their name, ID, and department before accessing the study planner.
+## Student Registration
 
-<p align="center">
-  <img width="700" alt="Student Registration" src="https://github.com/user-attachments/assets/3690a2f3-f14e-4c6f-bd59-5de40595d1d8" />
-</p>
+The application begins with a registration page where students enter their:
 
----
+- Name
+- Student ID
+- Department
 
-## 2. Department-Based Task Planning
+After successful validation, users are redirected to the study planner dashboard.
 
-After registration, students can select and add department-specific study tasks. The application also validates the maximum task limit and displays a warning when the limit is reached.
+</td>
 
-<p align="center">
-  <img width="700" alt="Task Management and Validation" src="https://github.com/user-attachments/assets/554403ae-2acc-4d8b-a8ca-8a79576157e7" />
-</p>
+<td width="55%">
+
+<img src="https://github.com/user-attachments/assets/3690a2f3-f14e-4c6f-bd59-5de40595d1d8" width="100%">
+
+</td>
+</tr>
+
+<tr>
+<td width="45%">
+
+## Task Management & Validation
+
+Students can select department-specific study tasks and add them to their planner.
+
+Features demonstrated:
+
+- Department-based task suggestions
+- Dynamic task creation
+- Maximum 5 task limit
+- Validation warning message
+
+</td>
+
+<td width="55%">
+
+<img src="https://github.com/user-attachments/assets/554403ae-2acc-4d8b-a8ca-8a79576157e7" width="100%">
+
+</td>
+</tr>
+
+<tr>
+<td width="45%">
+
+## Task Completion
+
+Users can mark tasks as completed.
+
+When the **Complete** button is pressed:
+
+- The task is removed from the planner
+- The task list remains organized
+- Users can add new tasks if needed
+
+</td>
+
+<td width="55%">
+
+<img src="https://github.com/user-attachments/assets/f7b89aec-c635-48d6-8db4-76637c7bade4" width="100%">
+
+</td>
+</tr>
+</table>
+```
 
 ---
 
