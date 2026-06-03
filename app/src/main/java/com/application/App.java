@@ -23,7 +23,7 @@ public class App extends Application {
     private Label limitErrorLabel;
 
     private final double WIN_WIDTH = 800;
-    private final double WIN_HEIGHT = 810;
+    private final double WIN_HEIGHT = 800;
 
     @Override
     public void start(Stage primaryStage) {
