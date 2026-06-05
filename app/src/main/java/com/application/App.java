@@ -11,6 +11,7 @@ import javafx.scene.paint.Color;
 import javafx.scene.shape.Line;
 import javafx.stage.Stage;
 import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import java.util.Arrays;
 import java.util.List;
 
@@ -23,7 +24,7 @@ public class App extends Application {
     private Label limitErrorLabel;
 
     private final double WIN_WIDTH = 800;
-    private final double WIN_HEIGHT = 800;
+    private final double WIN_HEIGHT = 830;
 
     @Override
     public void start(Stage primaryStage) {
@@ -41,42 +42,58 @@ public class App extends Application {
         Image icon = new Image("StudyPlanner.png");
         this.primaryStage.getIcons().add(icon);
 
+        HBox headerBox = new HBox();
+        headerBox.setAlignment(Pos.CENTER_LEFT);
+        headerBox.setPadding(new Insets(0, 10, 0, 0));
+
+        VBox titleContainer = new VBox(5);
         Label title = new Label("Department Based Study Planner");
         title.setStyle("-fx-font-size: 30px; -fx-font-weight: bold; -fx-text-fill: #2c3e50;");
-
         Label subtitle = new Label("Student Registration");
-        subtitle.setStyle("-fx-font-size: 24px; -fx-text-fill: #2e7e8b;");
+        subtitle.setStyle("-fx-font-size: 28px; -fx-text-fill: #2e7e8b;");
+        titleContainer.getChildren().addAll(title, subtitle);
+
+        Region headerSpacer = new Region();
+        HBox.setHgrow(headerSpacer, Priority.ALWAYS);
+
+        ImageView registrationImageView = new ImageView(icon);
+        registrationImageView.setFitWidth(100);
+        registrationImageView.setPreserveRatio(true);
+
+        headerBox.getChildren().addAll(titleContainer, headerSpacer, registrationImageView);
 
         Line line = new Line(0, 0, WIN_WIDTH - 60, 0);
         line.setStroke(Color.web("#ecf0f1"));
 
         VBox nameGroup = new VBox(8);
         Label nameLabel = new Label("Name:");
-        nameLabel.setStyle("-fx-font-weight: bold; -fx-font-size: 13px; -fx-text-fill: #000000;");
+        nameLabel.setStyle("-fx-font-weight: bold; -fx-font-size: 15px; -fx-text-fill: #000000;");
         TextField nameField = new TextField();
         nameField.setPromptText("Enter your name");
         nameField.setStyle(
-                "-fx-background-color: #f8f9fa; -fx-border-color: #ddd; -fx-border-radius: 5; -fx-padding: 10;");
+                "-fx-background-color: #f8f9fa; -fx-border-color: #ddd; -fx-border-radius: 5; -fx-padding: 12; -fx-font-size: 15px;");
         nameGroup.getChildren().addAll(nameLabel, nameField);
 
         VBox idGroup = new VBox(8);
         Label idLabel = new Label("ID:");
-        idLabel.setStyle("-fx-font-weight: bold; -fx-text-fill: #000000;");
+        idLabel.setStyle("-fx-font-weight: bold; -fx-font-size: 15px; -fx-text-fill: #000000;");
         TextField idField = new TextField();
         idField.setPromptText("Enter your ID (3 digits)");
         idField.setStyle(
-                "-fx-background-color: #f8f9fa; -fx-border-color: #ddd; -fx-border-radius: 5; -fx-padding: 10;");
+                "-fx-background-color: #f8f9fa; -fx-border-color: #ddd; -fx-border-radius: 5; -fx-padding: 12; -fx-font-size: 15px;");
         idGroup.getChildren().addAll(idLabel, idField);
 
         VBox deptGroup = new VBox(8);
         Label deptLabel = new Label("Department:");
-        deptLabel.setStyle("-fx-font-weight: bold; -fx-font-size: 13px; -fx-text-fill: #000000;");
-        ChoiceBox<String> deptDropdown = new ChoiceBox<>();
+        deptLabel.setStyle("-fx-font-weight: bold; -fx-font-size: 15px; -fx-text-fill: #000000;");
+
+        ComboBox<String> deptDropdown = new ComboBox<>();
         deptDropdown.getItems().addAll("CSE", "BBA", "English");
         deptDropdown.setValue("CSE");
         deptDropdown.setMaxWidth(Double.MAX_VALUE);
         deptDropdown.setStyle(
-                "-fx-background-color: #f8f9fa; -fx-border-color: #ddd; -fx-border-radius: 5; -fx-padding: 8;");
+                "-fx-background-color: #ffffff; -fx-border-color: #ddd; -fx-border-radius: 5; -fx-padding: 12; -fx-font-size: 16px;");
+
         deptGroup.getChildren().addAll(deptLabel, deptDropdown);
 
         Button submitBtn = new Button("Submit");
@@ -120,7 +137,7 @@ public class App extends Application {
             }
         });
 
-        root.getChildren().addAll(title, subtitle, line, nameGroup, idGroup, deptGroup, submitBtn, errorLabel,
+        root.getChildren().addAll(headerBox, line, nameGroup, idGroup, deptGroup, submitBtn, errorLabel,
                 suggestionBox);
         primaryStage.setScene(new Scene(root, WIN_WIDTH, WIN_HEIGHT));
         primaryStage.show();
@@ -146,35 +163,50 @@ public class App extends Application {
     }
 
     private void showPlannerScene() {
-        VBox root = new VBox(20);
+        VBox root = new VBox(15);
         root.setPadding(new Insets(30));
-        root.setStyle("-fx-background-color: white;");
+        root.setStyle("-fx-background-color: #f5f6fa;");
 
+        HBox headerBox = new HBox();
+        headerBox.setAlignment(Pos.CENTER_LEFT);
+        headerBox.setPadding(new Insets(0, 10, 0, 0));
+
+        VBox titleContainer = new VBox(5);
         Label welcomeLabel = new Label("Welcome, " + studentName);
         welcomeLabel.setStyle("-fx-font-size: 30px; -fx-font-weight: bold; -fx-text-fill: #000000;");
-
         Label deptLabel = new Label("Department: " + department);
-        deptLabel.setStyle("-fx-font-size: 24px; -fx-text-fill: #20818e;");
+        deptLabel.setStyle("-fx-font-size: 28px; -fx-text-fill: #20818e;");
+        titleContainer.getChildren().addAll(welcomeLabel, deptLabel);
+
+        Region headerSpacer = new Region();
+        HBox.setHgrow(headerSpacer, Priority.ALWAYS);
+
+        Image icon = new Image("StudyPlanner.png");
+        ImageView plannerImageView = new ImageView(icon);
+        plannerImageView.setFitWidth(100);
+        plannerImageView.setPreserveRatio(true);
+
+        headerBox.getChildren().addAll(titleContainer, headerSpacer, plannerImageView);
 
         Line line = new Line(0, 0, WIN_WIDTH - 60, 0);
         line.setStroke(Color.web("#ecf0f1"));
 
         VBox selectBox = new VBox(8);
         Label selectLabel = new Label("Select Task or Write Task:");
-        selectLabel.setStyle("-fx-font-weight: bold; -fx-font-size: 13px; -fx-text-fill: #000000;");
+        selectLabel.setStyle("-fx-font-weight: bold; -fx-font-size: 15px; -fx-text-fill: #000000;");
 
-        ChoiceBox<String> taskDropdown = new ChoiceBox<>();
+        ComboBox<String> taskDropdown = new ComboBox<>();
         List<String> options = getSuggestionsForDept(department);
         taskDropdown.getItems().addAll(options);
         taskDropdown.setValue(options.get(0));
         taskDropdown.setMaxWidth(Double.MAX_VALUE);
         taskDropdown.setStyle(
-                "-fx-background-color: #f8f9fa; -fx-border-color: #ddd; -fx-border-radius: 5; -fx-padding: 8;");
+                "-fx-background-color: #f8f9fa; -fx-border-color: #ddd; -fx-border-radius: 5; -fx-padding: 8; -fx-font-size: 15px;");
 
         TextField customTaskField = new TextField();
         customTaskField.setPromptText("Or write your task here...");
         customTaskField.setStyle(
-                "-fx-background-color: #f8f9fa; -fx-border-color: #ddd; -fx-border-radius: 5; -fx-padding: 10;");
+                "-fx-background-color: #f8f9fa; -fx-border-color: #ddd; -fx-border-radius: 5; -fx-padding: 12; -fx-font-size: 15px;");
 
         Button addTaskBtn = new Button("+ Add Task");
         addTaskBtn.setMaxWidth(Double.MAX_VALUE);
@@ -182,7 +214,7 @@ public class App extends Application {
                 "-fx-background-color: #3498db; -fx-text-fill: white; -fx-font-weight: bold; -fx-font-size: 16px; -fx-padding: 12; -fx-background-radius: 8;");
 
         limitErrorLabel = new Label();
-        limitErrorLabel.setStyle("-fx-text-fill: #e74c3c; -fx-font-size: 15px; -fx-font-weight: bold;");
+        limitErrorLabel.setStyle("-fx-text-fill: #e74c3c; -fx-font-size: 16px; -fx-font-weight: bold;");
         limitErrorLabel.setMaxWidth(Double.MAX_VALUE);
         limitErrorLabel.setAlignment(Pos.CENTER);
 
@@ -214,7 +246,7 @@ public class App extends Application {
             }
         });
 
-        root.getChildren().addAll(welcomeLabel, deptLabel, line, selectBox, taskContainer);
+        root.getChildren().addAll(headerBox, line, selectBox, taskContainer);
         primaryStage.setScene(new Scene(root, WIN_WIDTH, WIN_HEIGHT));
     }
 
@@ -239,7 +271,7 @@ public class App extends Application {
 
         Button completeBtn = new Button("Complete");
         completeBtn.setStyle(
-                "-fx-background-color: #2ecc71; -fx-text-fill: white; -fx-font-weight: bold; -fx-padding: 8 18; -fx-background-radius: 6;");
+                "-fx-background-color: #2ecc71; -fx-text-fill: white; -fx-font-weight: bold; -fx-font-size: 14px; -fx-padding: 8 18; -fx-background-radius: 8;");
 
         completeBtn.setOnAction(e -> {
             taskContainer.getChildren().remove(row);
