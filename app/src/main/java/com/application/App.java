@@ -125,13 +125,17 @@ public class App extends Application {
         });
 
         submitBtn.setOnAction(e -> {
+            String name = nameField.getText().trim();
             String id = idField.getText();
-            if (nameField.getText().isEmpty() || !id.matches("\\d{3}")) {
-                errorLabel.setText("Error: Name required & ID must be 3 digits!");
-            }
 
+            if (name.isEmpty() || name.matches(".*\\d.*")) {
+                errorLabel.setText("Error: Name must contain only letters (no numbers)!");
+            } 
+            else if (!id.matches("\\d{3}")) {
+                errorLabel.setText("Error: Name required & ID must be 3 digits!");
+            } 
             else {
-                this.studentName = nameField.getText();
+                this.studentName = name;
                 this.department = deptDropdown.getValue();
                 showPlannerScene();
             }
