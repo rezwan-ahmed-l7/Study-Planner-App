@@ -1,4 +1,4 @@
-# Department Based Study Planner
+# Department-Based Study Planner
 
 <p align="center">
 
@@ -33,6 +33,7 @@ The project was designed to apply Object-Oriented Programming principles, event-
 * Student Registration System
 * Department Selection (CSE, BBA, English)
 * Department-Specific Study Suggestions
+* Create own tasks
 * Task Management System
 * Add Study Tasks
 * Mark Tasks as Completed
@@ -55,7 +56,8 @@ The application begins with a registration page where students enter their:
 
 - Name
 - Student ID
-- Department
+- Select Department
+- Submit
 
 After successful submission, users are redirected to the study planner dashboard.
 
@@ -63,7 +65,7 @@ After successful submission, users are redirected to the study planner dashboard
 
 <td width="55%">
 
-<img src="https://github.com/user-attachments/assets/3690a2f3-f14e-4c6f-bd59-5de40595d1d8" width="100%">
+<img src="https://github.com/user-attachments/assets/dc880739-15e8-458f-9c86-d6718e57a10a" width="100%">
 
 </td>
 </tr>
@@ -73,11 +75,12 @@ After successful submission, users are redirected to the study planner dashboard
 
 ## 2. Task Management & Validation
 
-Students can select department-specific study tasks and add them to their planner.
+Students can select department-specific study tasks or create their own tasks and add them to their planner.
 
 Features demonstrated:
 
 - Department-based task suggestions
+- Create your own task
 - Maximum 5 task limit
 - Validation warning message
 
@@ -85,7 +88,7 @@ Features demonstrated:
 
 <td width="55%">
 
-<img src="https://github.com/user-attachments/assets/554403ae-2acc-4d8b-a8ca-8a79576157e7" width="100%">
+<img src="https://github.com/user-attachments/assets/237116a2-119c-4f00-a64e-c74a42fa95c6" width="100%">
 
 </td>
 </tr>
@@ -95,7 +98,7 @@ Features demonstrated:
 
 ## 3. Task Completion
 
-Users can mark tasks as completed.
+Users can mark tasks as completed and add new tasks.
 
 When the **Complete** button is pressed:
 
@@ -107,7 +110,7 @@ When the **Complete** button is pressed:
 
 <td width="55%">
 
-<img src="https://github.com/user-attachments/assets/538d8471-984a-44e1-a7f3-aa1729c49b84" width="100%">
+<img src="https://github.com/user-attachments/assets/3a5f52c2-75c7-40f3-b39f-e8255e4c4315" width="100%">
 
 </td>
 </tr>
@@ -240,12 +243,14 @@ This project helped me improve my understanding of:
 
 # Future Improvements
 
-* Database Integration
-* User Login System
-* Task Priority Management
-* Deadline & Reminder System
+* Back Button
 * Additional Department Support
 * Dark Mode Support
+* Database Integration
+* Calendar Integration
+* Timer Integration
+* Task Priority Management
+* Deadline & Reminder System
 
 ---
 
@@ -259,4 +264,7 @@ B.Sc. Engg. in CSE Student | Aspiring Software Developer & Learner
 
 # Support
 
-If you found this project useful, consider giving it a ⭐ on GitHub.
+🌱 This repository is part of my learning journey as a CSE student. 
+The codes, assignments, and reports are shared for educational purposes and may be useful for students who are learning similar concepts.
+
+If you found this repository useful, consider giving it a ⭐ on GitHub. Thank you.
