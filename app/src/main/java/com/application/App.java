@@ -102,7 +102,7 @@ public class App extends Application {
                 "-fx-background-color: #3498db; -fx-text-fill: white; -fx-font-weight: bold; -fx-font-size: 16px; -fx-padding: 12; -fx-background-radius: 8;");
 
         Label errorLabel = new Label();
-        errorLabel.setStyle("-fx-text-fill: #e74c3c; -fx-font-size: 13px;");
+        errorLabel.setStyle("-fx-text-fill: #e74c3c; -fx-font-weight: bold; -fx-font-size: 16px;");
 
         VBox suggestionBox = new VBox(10);
         suggestionBox.setPadding(new Insets(15));
@@ -256,12 +256,6 @@ public class App extends Application {
         row.setPadding(new Insets(15, 20, 15, 20));
         row.setStyle(
                 "-fx-background-color: white; -fx-border-color: #e9ecef; -fx-border-radius: 10; -fx-background-radius: 10;");
-
-        DropShadow rowShadow = new DropShadow();
-        rowShadow.setRadius(5);
-        rowShadow.setOffsetY(2);
-        rowShadow.setColor(Color.rgb(0, 0, 0, 0.05));
-        row.setEffect(rowShadow);
 
         Label taskLabel = new Label(taskName);
         taskLabel.setStyle("-fx-font-size: 16px; -fx-text-fill: #000000; -fx-font-weight: 500;");
