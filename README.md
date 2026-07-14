@@ -41,6 +41,14 @@ The project was designed to apply Object-Oriented Programming principles, event-
 * User Input Validation
 * Interactive JavaFX Interface
 * Clean and User-Friendly Design
+---
+
+# System Structure & Workflow
+
+<img width="900" alt="Screenshot 2026-06-05 191609" src="https://github.com/user-attachments/assets/a845ef01-8c8f-4b6d-8935-0bfecc6fdf73" />
+
+
+<img width="424" height="786" alt="Screenshot 2026-06-06 201856" src="https://github.com/user-attachments/assets/2d6a8848-c65f-4fca-8400-f3766edf1e2a" />
 
 ---
 
