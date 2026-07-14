@@ -48,19 +48,19 @@ The project was designed to apply Object-Oriented Programming principles, event-
 
 <table>
 <tr>
-<td width="45%">
+<td width="50%">
 
 ## Structure
 
-<img width="900" alt="Screenshot 2026-06-05 191609" src="https://github.com/user-attachments/assets/a845ef01-8c8f-4b6d-8935-0bfecc6fdf73" />
+<img width="900" height="200" alt="Screenshot 2026-06-05 191609" src="https://github.com/user-attachments/assets/a845ef01-8c8f-4b6d-8935-0bfecc6fdf73" />
 
 </td>
 
-<td width="55%">
+<td width="45%">
 
 ## Workflow
 
-<img width="424" height="786" alt="Screenshot 2026-06-06 201856" src="https://github.com/user-attachments/assets/2d6a8848-c65f-4fca-8400-f3766edf1e2a" />
+<img width="500" height="500" alt="Screenshot 2026-06-06 201856" src="https://github.com/user-attachments/assets/2d6a8848-c65f-4fca-8400-f3766edf1e2a" />
 
 </td>
 </tr>
