@@ -53,7 +53,7 @@ The project was designed to apply Object-Oriented Programming principles, event-
 ## Structure
 
 <img src="https://github.com/user-attachments/assets/a845ef01-8c8f-4b6d-8935-0bfecc6fdf73" width="100%">
-.
+
 The application is built with **JavaFX** and follows the **MVC** pattern.
 
 It consists of two main scenes:
