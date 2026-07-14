@@ -54,6 +54,14 @@ The project was designed to apply Object-Oriented Programming principles, event-
 
 <img src="https://github.com/user-attachments/assets/a845ef01-8c8f-4b6d-8935-0bfecc6fdf73" width="100%">
 
+The application is built with **JavaFX** and follows the **MVC** pattern.
+
+It consists of two main scenes:
+- **Registration Scene**: Takes user name, ID, department, and displays a quote.
+- **Planner Scene**: Allows users to select/add tasks (max 5), view them in a container, and mark them as complete.
+
+The structure ensures clean separation between UI components and business logic for better maintainability.
+
 </td>
 
 <td width="40%">
