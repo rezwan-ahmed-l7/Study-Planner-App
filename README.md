@@ -48,7 +48,7 @@ The project was designed to apply Object-Oriented Programming principles, event-
 
 <table>
 <tr>
-<td width="50%">
+<td width="60%">
 
 ## Structure
 
@@ -56,7 +56,7 @@ The project was designed to apply Object-Oriented Programming principles, event-
 
 </td>
 
-<td width="45%">
+<td width="40%">
 
 ## Workflow
 
